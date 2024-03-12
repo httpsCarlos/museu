@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu Nacional</title>
+</head>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f4f2ec;
+}
+
+#area-cabecalho{
+    background-color: #252217;
+    padding: 80px;
+}
+
+#area-logo{
+    padding-left: 70px;
+}
+
+.menu{
+    font-size: 14px;
+    text-align: right;
+    font-weight: bold;
+}
+
+#area-principal{
+    padding-left: 140px;
+}
+
+#exposicoes {
+    float: left;
+    width: 310px;
+    margin: 10px 25px;
+    font-weight: bold;
+}
+
+#historia{
+    float: left;
+    width: 310px;
+    margin: 15px 37px;
+    font-weight: bold;
+}
+
+aside {
+    width: 350px;
+    float: right;
+    background: #ebe7dd;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+#visita {
+    background: #cdc8b1;
+    padding: 10px 27px 27px 27px;
+    margin-top: 10px;
+}
+
+#video{
+    padding-left: 160px;
+    margin: 5px;
+}
+
+#area-lateral{
+    width: 450px;
+    float: right;
+    padding-right: 40px;
+}
+
+.conteudo-lateral{
+    font-size: 8px;
+    padding: 5px;
+}
+
+input {
+    height: 20px;
+    width: 100px;
+    background: #fff;
+    border: none;
+}
+
+input.campo {
+    border: 1px solid #ada484;
+}
+
+input.botao {
+    background: #9b9271;
+    color: white;
+    width: 400px;
+    height: 40px;
+    font-size: 14px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    display: none;
+}
+
+#galeria {
+    padding: 0 27px;
+}
+
+#galeria a{
+    display: block;
+    background-image: url(C:\Users\User\Desktop\Desafio\fundo-foto.png);
+    float: left;
+    padding: 17px 15px;
+    margin: 10px 0 0 20px;
+}
+
+#galeria img{
+    margin-left: 2px;
+    margin-top: 3px;
+}
+
+#rodape{
+    clear: both;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: #8f5f14;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited{
+    padding: 15px;
+}
+
+#area-cabecalho a:hover{
+    color: #8f5f14;
+    background-color: #f4f2ec;
+    text-decoration: none;
+}
+
+h4{
+    color: #319f4e;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+ul{
+    padding-top: 15px;
+    padding-left: 40px;
+    color: #8f5f14;
+}
+
+</style>
+
+<body>
+    <div>
+    <div id="area-cabecalho" height="250px">
+        <div id="area-logo">
+            <img width="250" src="logo.png"> 
+        </div>
+
+        <div class="menu">
+            <a href="desafio.html">HOME</a>
+            <a href="">EXPOSIÇÃO</a>
+            <a href="">PESQUISA</a>
+            <a href="">ACERVO</a>
+            <a href="">VÍDEOS</a>
+            <a href="">FOTOS</a>
+            <a href="">CONTATO</a>
+        </div>   
+    </div>
+    <div id="area-lateral">
+        <img src="depoimento.png" width="400px"><br>
+        <div class="conteudo-lateral">
+            <h4>FAÇA UMA VISITA</h4>
+            <div id="visita">
+                <p>Data </p><input id="date" type="date"/>
+                    <label for="qtd-pessoas">Qtd pessoas:</label>
+                    <input type="number" id="" name="qtd-pessoas" width="400px">
+
+            </div>
+            <div class="postagem-lateral"></div>
+        <form>
+            <input class="botao" type="submit" value="Verificar disponibilidade">
+        </form>    
+        </div>
+        <div id="galeria">
+            <h4>GALERIA DE FOTOS</h4>
+            <a href="">
+                <img src="imagem1.jpg" height="93" width="93">
+            </a>
+            <a href="">
+                <img src="imagem2.jpg" height="93" width="93">
+            </a>
+            <a href="">
+                <img src="imagem3.jpg" height="93" width="93">
+            </a>
+            <a href="">
+                <img src="imagem4.jpg" height="93" width="93">
+            </a>
+        </div>
+    </div>
+    <div id="area-principal">
+        <img src="museu.png" width="800px">
+    </div>
+
+    <div id="video">
+        <h4>VÍDEO: CONHEÇA O MUSEU</h4>
+        <iframe width="380" height="200" src="https://www.youtube.com/embed/RGUYb-hivrc?si=zRa1tZj-e8aEldkd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="380" height="200" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1996168134656!2d-43.22826163723752!3d-22.906006996392858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1710116817027!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+    <div id="exposicoes">
+        <h4>EXPOSIÇÕES</h4>
+        <ul>
+            <li>Os assustadores insetos</li>
+            <li>O crânio de Luzia, a mulher mais antiga do Brasil</li>
+            <li>Preguiça gigante e tigre-dentes-de-sabre</li>
+            <li>Plantas do Brasil Central</li>
+            <li>Tereza Cristina: a Imperatriz Arqueóloga</li>
+            <li>Arte com dinossauros: Paleoarte</li>
+            <li><strong>Veja todos (65)</strong></li>
+        </ul>
+    </div>
+    <div id="historia">
+        <h4>200 ANOS DE HISTÓRIA</h4>
+        <p>Numa ponta que avançava sobre o mar, posteriormente conhecida como Ponte do Calabouço, entre as praias de Piaçaba e Santa Luzia, no centro histórico do Rio de Janeiro, os portugueses construíram em 1603 a Fortaleza de Santiago, orgigem do conjunto arquitetônico que hoje abriga o Museu Histórico Nacional.</p>
+        <a href="">Leia Mais</a>
+    </div>
+    
+    </div>
+    <div id="rodape">
+        <a href="desafio.html">home</a>
+            <a href="">Exposições</a>
+            <a href="">Pesquisa</a>
+            <a href="">acervo</a>
+            <a href="">vídeos</a>
+            <a href="">fotos</a>
+            <a href="">contato</a>
+            <p>2024 <span style="color:#8f5f14"> Museu Nacional</span> Todos os direitos reservados</p>
+    </div>
+    </div>
+
+</body>
+</html>
